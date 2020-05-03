@@ -71,7 +71,7 @@ keys.forEach((key) => {
 				document.querySelector('.hangsound').play();
 			});
 		}
-		if (winCounter == str.length && gameOverCounter != 7) {
+		if (winCounter == str.length && gameOverCounter != 8) {
 			overlayHang.style.display = 'flex';
 			keys.forEach((key) => {
 				key.classList.add('no-clicking');
