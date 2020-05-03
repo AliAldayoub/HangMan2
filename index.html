@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hang Man</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="overlay">
+        <input type="text" placeholder="Please Enter Your Name">
+        <button class="startgame">Start Game</button>
+    </div>
+    <div class="overlayHang">
+        <div>
+            <p>Hang Man</p>
+            <button class="try">Try Again</button>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="name-box">
+            <p class="name">welcome <span>default</span></p>
+        </div>
+        <button class="start">Try Again</button>
+        <div>
+            <p class="keyword">keyword from : <span>movies</span></p>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div class="keys-Box">
+            <span>A</span>
+            <span>B</span>
+            <span>C</span>
+            <span>D</span>
+            <span>E</span>
+            <span>F</span>
+            <span>G</span>
+            <span>H</span>
+            <span>I</span>
+            <span>J</span>
+            <span>K</span>
+            <span>L</span>
+            <span>M</span>
+            <span>N</span>
+            <span>O</span>
+            <span>P</span>
+            <span>Q</span>
+            <span>R</span>
+            <span>S</span>
+            <span>T</span>
+            <span>U</span>
+            <span>V</span>
+            <span>W</span>
+            <span>X</span>
+            <span>Y</span>
+            <span>Z</span>
+        </div>
+        <div class="answer-box">
+
+        </div>
+        <div class="hang-man">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <audio class="success" src="success.wav" preload="auto"></audio>
+    <audio class="wrong" src="wrong.wav" preload="auto"></audio>
+    <audio class="hangsound" src="hang.mp3" preload="auto"></audio>
+    <audio class="winsound" src="win.mp3" preload="auto"></audio>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
