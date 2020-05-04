@@ -41,6 +41,8 @@ function startGame() {
 	winCounter = 0;
 	overlayHang.style.display = 'none';
 	overlayHang.firstElementChild.firstElementChild.innerHTML = ' Hang Man ';
+	overlayHang.firstElementChild.firstElementChild.nextElementSibling.innerHTML = 'Try Again';
+
 	for (let i = 0; i < hangMan.children.length; i++) {
 		hangMan.children[i].style.visibility = 'hidden';
 	}
@@ -77,6 +79,7 @@ keys.forEach((key) => {
 				key.classList.add('no-clicking');
 			});
 			overlayHang.firstElementChild.firstElementChild.innerHTML = ' You Win ';
+			overlayHang.firstElementChild.firstElementChild.nextElementSibling.innerHTML = 'play Again';
 			document.querySelector('.winsound').play();
 		}
 	});
